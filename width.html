@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    div.r1 {
+        width: 300px;
+        margin: auto;
+        border: inset red;
+    }
+div.r2 {
+    width: 300px;
+    margin: auto;
+    border: inset blue;
+}
+div.relative {
+    position: relative;
+  width: 400px;
+  height: 200px;
+  border: 3px inset #3b18ff;
+  background-color: orange;
+  overflow: visible;
+}
+div.absolute {
+    position: absolute;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: 3px solid #7f20b6;
+}
+div.sticky {
+    position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background-color: #cae8ca;
+  border: 2px solid #4CAF50;
+}
+img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+</style>
+</head>
+<body>
+ <div class="sticky">Aku adalah bos!</div>
+ <div style="padding-bottom:500px"></div>
+    <div class="r1">Coba coba saja</div>
+    <br>
+
+    <div class="r2">Coba coba juga</div>
+    <br>
+    <br>
+
+    <div class="relative">Hari rabu tanggal 3 mei 2023
+        <div class="absolute">Besok hari kamis tgl 4 mei 2023
+    </div>
+    </div>
+    <img src="kepala.png">
+</body>
+</html>
