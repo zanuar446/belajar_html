@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h1>Hari ini hari apa</h1>
+
+    <p id="demo"></p>
+
+    <script>
+        let day;
+switch (new Date().getDay()) {
+  case 0:
+    day = "Minggu";
+    break;
+  case 1:
+    day = "Senin";
+    break;
+  case 2:
+    day = "Selasa";
+    break;
+  case 3:
+    day = "Rabu";
+    break;
+  case 4:
+    day = "Kamis";
+    break;
+  case 5:
+    day = "Jum'at";
+    break;
+  case  6:
+    day = "Sabtu";
+}
+document.getElementById("demo").innerHTML = "Ini Hari " + day;
+</script>
+
+    </script>
+</body>
+</html>
